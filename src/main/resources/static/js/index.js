@@ -2,6 +2,7 @@ requirejs.config({
     baseUrl: 'js'
 })
 
+
 function buildRoute(view) {
     return function() {
         webix.ui({
@@ -9,17 +10,15 @@ function buildRoute(view) {
             rows: [
                 view
             ]
-        }, $$('root'))
-
+        }, $$("root"))
     }
 }
 
-// 17:20
 require(['views/main', 'views/cars'], function(main, cars) {
-    webix.ready(function(){
+    webix.ready(function() {
         webix.ui({
-            id: "root",
-            container: "app",
+            id: 'root',
+            container: "app"
         })
     })
 

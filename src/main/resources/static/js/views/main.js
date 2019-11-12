@@ -1,4 +1,4 @@
-defun(function(cars) {
+define(function(cars) {
     return {
               type: "line",
               height: 400,

@@ -1,4 +1,4 @@
-defin(function() {
+define(function() {
     return {
         rows: [
             {
@@ -9,7 +9,7 @@ defin(function() {
                 }
             },
             {
-                view: "list",
+                view: 'list',
                 data: [
                     'audi q7',
                     'bmw x7',
