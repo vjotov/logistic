@@ -32,14 +32,16 @@ require(
     webix.ready(function() {
         webix.ui({
             container: "app",
-            width: document.body.clientQidth,
+            width: document.body.clientWidth,
             height: document.body.clientHeight,
             rows: [
                 {
                     view: "toolbar",
                     cols: [
                         buildButton("Home", ""),
-                        buildButton("Marks", "marks")
+                        buildButton("Marks", "marks"),
+                        buildButton("Cars", "cars")
+
                     ]
                 },
                 {
