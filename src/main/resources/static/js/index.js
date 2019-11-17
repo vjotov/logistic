@@ -17,7 +17,7 @@ function buildRoute(view) {
 function buildButton(label, route) {
     return {
                view:"button",
-               vslue:label,
+               value:label,
                width:100,
                align: "center",
                click: function() {
@@ -27,8 +27,8 @@ function buildButton(label, route) {
 }
 
 require(
-    ['views/main', 'views/cars', 'view/marks'],
-    function(main, cars, marks) {
+    ['views/main', 'views/cars', 'views/marks', 'util/resourceProxy'],
+    function(main, cars, marks, resourceProxy) {
     webix.ready(function() {
         webix.ui({
             container: "app",
