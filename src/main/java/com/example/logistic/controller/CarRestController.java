@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api/car")
-public class CarRestControler extends AbstractRestController<Car, CarRepo> {
-    public CarRestControler(CarRepo repo) {
+public class CarRestController extends AbstractRestController<Car, CarRepo> {
+    public CarRestController(CarRepo repo) {
         super(repo);
     }
 }

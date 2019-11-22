@@ -1,6 +1,6 @@
 define(function(cars) {
     return {
-              type: "line",
+              type: 'line',
               height: 400,
               rows:[
                 {
@@ -10,11 +10,11 @@ define(function(cars) {
                         routie('cars')
                     }
                 },
-                { template:"View 1" },
-                { template:"View 2" },
+                { template:'View 1' },
+                { template:'View 2' },
                 { cols: [
-                    { template:"View 3" },
-                    { template:"View 4" }
+                    { template:'View 3' },
+                    { template:'View 4' }
                 ]}
               ]
             }

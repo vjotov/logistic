@@ -5,7 +5,7 @@ define(function () {
 
     webix.proxy.resource = {
         init:function(){
-            webix.extend(this, webix.proxy.rest);
+            webix.extend(this, webix.proxy.rest)
         },
         load:function(view, params){
             var args = ''
@@ -23,7 +23,7 @@ define(function () {
                     pos: response.number * view.config.datafetch,
                     total_count: response.totalElements
                 }
-            });
+            })
         },
         save:function(view, params){
             var id = params.id
